@@ -1,0 +1,41 @@
+/* 亮色主题变量 */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f5f5f5;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --accent-color: #4a90e2;
+    --border-color: #e0e0e0;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --header-bg: rgba(255, 255, 255, 0.95);
+    --footer-bg: #f8f8f8;
+}
+
+/* 暗色主题变量 */
+.dark-theme {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #2d2d2d;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --accent-color: #64b5f6;
+    --border-color: #404040;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --header-bg: rgba(26, 26, 26, 0.95);
+    --footer-bg: #2d2d2d;
+}
+
+/* 主题切换过渡动画 */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 主题图标样式 */
+.light-theme .dark-icon,
+.dark-theme .light-icon {
+    display: none;
+}
+
+.light-theme .light-icon,
+.dark-theme .dark-icon {
+    display: inline-block;
+}

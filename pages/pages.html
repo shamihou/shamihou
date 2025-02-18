@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>内容 - 我的网站</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/themes.css">
+    <!-- 添加Markdown渲染器样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5.2.0/github-markdown.min.css">
+    <style>
+        .markdown-body {
+            background-color: inherit;
+            color: inherit;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .markdown-body img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body class="light-theme">
+    <div id="header-container"></div>
+
+    <main>
+        <article class="markdown-body">
+            <!-- Markdown内容将通过JavaScript动态加载和渲染 -->
+            <div id="content"></div>
+        </article>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- 添加Markdown解析器 -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/language.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/pages.js"></script>
+</body>
+</html>
